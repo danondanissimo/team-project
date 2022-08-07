@@ -19,12 +19,21 @@
   width: 234px;
 }
 .footer-h__h1 {
-  @include font-design(Titan One, normal, 400, 34px, 1.15);
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
   text-transform: uppercase;
   color: $text-color-secondary;
 }
 .footer-h__h2 {
-  @include font-design(Titan One, normal, 400, 34px, 1.15);
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $color-primary;
   margin-top: 16px;
@@ -53,13 +62,20 @@
     border-radius: 50%;
     outline-color: $color-primary;
   }
-}
-.icon-social {
-  display: block;
-  fill: currentColor;
+
+  .icon-social {
+    display: block;
+    fill: currentColor;
+  }
 }
 .tel,
 .tel-number {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0;
 }
 .tel-number {
   color: $color-primary;
@@ -69,6 +85,12 @@
   }
 }
 .copyright {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  letter-spacing: 0;
   color: $text-color-tertiary;
   margin-top: 56px;
   text-align: center;
