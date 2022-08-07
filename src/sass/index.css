@@ -1,1 +1,101 @@
+
 @import '~node_modules/modern-normalize/modern-normalize.css';
+.contacts {
+  background: #FFF5F6;
+}
+
+.contacts__item {
+  background: #FFFFFF;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  padding: 32px 40px;
+}
+
+.contacts__title {
+  width: 80px;
+  height: 16px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18, 6;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: #F0D1A5;
+  border-radius: 4px;
+  padding: 15;
+}
+
+.contacts__title-green {
+  background: #C2E297;
+}
+
+.contacts__city {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18, 6;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+
+.contacts__text {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15;
+  color: #907E82;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.contacts__day {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18, 6;
+  color: #000000;
+}
+
+.contacts__time {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18, 6;
+  color: #FFA5BA;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.contacts__link {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15;
+  color: #907E82;
+}
+
+.btn {
+  border-radius: 22px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 13, 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.contacts__btn-red {
+  background-color: red;
+  margin-bottom: 10px;
+}
+
+.contacts__btn-white {
+  background-color: white;
+}/*# sourceMappingURL=index.css.map */
+
