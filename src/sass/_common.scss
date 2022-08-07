@@ -102,3 +102,7 @@ section {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+.no-scroll {
+    overflow: hidden;
+}
