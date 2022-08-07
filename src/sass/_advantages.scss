@@ -1,0 +1,50 @@
+
+.advantages {
+    padding-top: 0;
+    background-color: $background-color-tertiary;
+}
+// Список продукту
+.advantages-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.advantages-list__item {
+max-width: 220px;
+    &::before {
+        display: block;
+        content: "";
+        height: 50px;
+        background-repeat: no-repeat;
+    }
+}
+// Титульний текст
+.advantages-list__title {
+    color: $color-primary;
+    font-family: $font-secondary;
+    font-size: 36px;
+    line-height: 1.14em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+// Текст
+.advantages-list__text {
+    font-family: $font-main;
+    font-size: 12px;
+    line-height: 1.7em;
+    font-weight: 700;
+
+}
+// Додавання зображення
+.first-icon::before {
+    
+    background-image: url(/src/images/advantages/milk.sm.png);
+}
+.second-icon::before {
+    margin-top: 30px;
+    background-image: url(/src/images/advantages/apple.sm.png);
+}
+.third-icon::before {
+    margin-top: 30px;
+    background-image: url(/src/images/advantages/heart.sm.png);
+}
