@@ -1,0 +1,128 @@
+.contacts {
+
+    background-color: $background-color-tertiary;
+
+}
+
+.contacts__item {
+
+
+background: $background-color-secondary;
+
+box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+border-radius: 24px;
+padding: 32px 40px;
+}
+.contacts__title {
+    width: 80px;
+    height: 16px;
+
+
+font-family: $font-main;
+
+font-weight: 500;
+font-size: 12px;
+line-height: 18,6;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+
+background: $background-color-quaternary;
+
+border-radius: 4px;
+
+padding: 15;
+
+}
+.contacts__title-green {
+
+    background: $background-color-quinary;
+
+    
+}
+
+.contacts__city {
+
+    font-family: $font-main;
+    
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18,6;
+    letter-spacing: 0.04em;
+
+    color: $text-color-primary;
+}
+
+.contacts__text {
+    font-family: $font-main;
+    
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15;
+    color: $text-color-tertiary;
+    border-bottom: 1px solid $background-color-senary;
+}
+
+.contacts__day {
+    font-family: $font-main;
+
+font-weight: 500;
+font-size: 12px;
+line-height: 18,6;
+color: $text-color-primary;
+}
+
+.contacts__time {
+font-family: $font-main;
+
+font-weight: 500;
+font-size: 12px;
+line-height: 18,6;
+color: $text-color-secondary;
+border-bottom: 1px solid $background-color-senary;
+}
+.contacts__link {
+font-family: $font-main;
+
+
+font-weight: 500;
+font-size: 12px;
+line-height: 15;
+
+
+color: $text-color-tertiary;
+transition: color 250ms, $cubic-bezier;
+    &:hover,
+    &:focus {
+    color: $color-quaternary;
+    }
+}
+.btn {
+border-radius: 22px;
+font-family: $font-main;
+
+
+font-weight: 700;
+font-size: 16px;
+line-height: 13,1;
+display: flex;
+align-items: center;
+text-align: center;
+}
+
+.btn-w {
+    fill: $background-color-secondary;
+    
+}
+.contacts__btn-red {
+    background-color: $color-quaternary;
+    color: $color-secondary;
+    margin-bottom: 10px;
+}
+
+.contacts__btn-white {
+    color: $color-quaternary;
+    background-color: $background-color-secondary;
+    }
+

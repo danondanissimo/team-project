@@ -1,29 +1,37 @@
-<section class="about">
+<section class="about" id="about-us">
     <div class="container">
-        <div class="section-title">
             <span class="section-title__main-text">tradition and love</span>
             <h2 class="section-title__main-title">how it’s made?</h2>
-        </div>
-    
         <div class="info">
             <div class="info__thumb-img">
-                <img src="#" alt="">
+                <img
+                
+                srcset="/src/images/about/cow_md.png 768px, /src/images/about/cow_lg.png 1200px"
+                sizes="(min-width: 768px) 768px, (min-width: 1200px) 1200px" 
+                src="/src/images/about/cow_sm.png" 
+                alt="fresh milk and cow">
             </div>
-            <div class="info__text">
-                <p>
+            <div class="info-text">
+                <p class="info-text__first-text">
                     Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget,
                     egestas
                     eros.
                     Maecenas eleifend erat at justo fringilla.
                 </p>
-                <p>
+                <p class="info-text__second-text">
                     Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet
                     placerat.
                     Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
-    
+                </p>
+                <p class="info-text__third-text">
                     Aliquam erat volutpat. Aenean accumsan.
                 </p>
-                <a class="info__link" href="#">Read more</a>
+                <button class="info-text__btn" href="#" type="button">
+                    <span class="info-text__btn-text">Read more</span>
+                    <svg class="info-text__btn-arrow" width="4.43" height="8">
+                        <use href="/src/images/sprite.svg#icon-btnarrow"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
