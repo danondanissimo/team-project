@@ -6,7 +6,7 @@ $background-color-tertiary: #FFF5F6;
 $background-color-quaternary:  #F0D1A5;
 $background-color-quinary: #C2E297;
 $background-color-senary: #E1E1E1;
-$background-gradient-primary: linear-gradient(to bottom, #fff5f6 0%, #fff5f6 27%,  #FFFFFF 27%,  #FFFFFF 100%);
+$background-gradient-primary: linear-gradient(to bottom, #FFF5F6 0%, #FFF5F6 24%, #FFFFFF 24%, #FFFFFF 100%);
 $background-gradient-secondary: linear-gradient(to bottom,  #FFFFFF 0%,  #FFFFFF 27%, #fff5f6 27%, #fff5f6 100%);
 $text-color-primary: #000000;
 $text-color-secondary: #FFA5BA;
@@ -32,9 +32,28 @@ $breakpoint-desktop: 1200px;
 $font-main: DM Sans, sans-serif;
 $font-secondary: Titan One, cursive;
 
+$items: 3;
+$indent: 32px;
 
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+}
 
 h1,
 h2,
@@ -52,17 +71,14 @@ section {
 }
 
 
-
-// .card-set {
-//     @include list;
-//     display: flex;
-//     flex-wrap: wrap;
-//     gap: var(--indent);
-// }
-
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $indent;
+}
 
 .card-set__item {
-    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+    flex-basis: calc((100% - $indent * $items - 1) / $items);
 }
     
 .container {
@@ -101,4 +117,19 @@ section {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.no-scroll {
+    overflow: hidden;}
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+
+
+.link {
+    text-decoration: none;
 }
