@@ -1,13 +1,12 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-
 $background-color-primary: #FFB8CA;
 $background-color-secondary: #FFFFFF;
 $background-color-tertiary: #FFF5F6;
-$background-color-quaternary:  #F0D1A5;
+$background-color-quaternary: #F0D1A5;
 $background-color-quinary: #C2E297;
 $background-color-senary: #E1E1E1;
 $background-gradient-primary: linear-gradient(to bottom, #FFF5F6 0%, #FFF5F6 24%, #FFFFFF 24%, #FFFFFF 100%);
-$background-gradient-secondary: linear-gradient(to bottom,  #FFFFFF 0%,  #FFFFFF 27%, #fff5f6 27%, #fff5f6 100%);
+$background-gradient-secondary: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 27%, #fff5f6 27%, #fff5f6 100%);
 $text-color-primary: #000000;
 $text-color-secondary: #FFA5BA;
 $text-color-tertiary: #907E82;
@@ -31,105 +30,3 @@ $breakpoint-desktop: 1200px;
 
 $font-main: DM Sans, sans-serif;
 $font-secondary: Titan One, cursive;
-
-$items: 3;
-$indent: 32px;
-
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-button {
-    border: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-}
-
-section {
-        padding-top: 60px;
-        padding-bottom: 60px;
-}
-
-
-.card-set {
-    display: flex;
-    flex-wrap: wrap;
-    gap: $indent;
-}
-
-.card-set__item {
-    flex-basis: calc((100% - $indent * $items - 1) / $items);
-}
-    
-.container {
-    margin-left: auto;
-    margin-right: auto;
-
-    @media screen and (max-width: 767px) {
-        min-width: 320px;
-        max-width: 767px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    @media screen and (min-width: 768px) {
-        max-width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        max-width: 1200px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
-.no-scroll {
-    overflow: hidden;}
-
-.list {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-}
-
-
-
-.link {
-    text-decoration: none;
-}
