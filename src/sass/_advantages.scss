@@ -8,6 +8,12 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    @media screen and (min-width: 769px) {
+        display: flex;
+    }
+    @media screen and (min-width: 1200px) {
+        justify-content: space-around;
+    }
 }
 .advantages-list__item {
 max-width: 220px;
@@ -16,6 +22,9 @@ max-width: 220px;
         content: "";
         height: 50px;
         background-repeat: no-repeat;
+    }
+    @media screen and (min-width: 769px) {
+        width: calc((100% - 6 * 30px) / 3);
     }
 }
 // Титульний текст
@@ -26,6 +35,14 @@ max-width: 220px;
     line-height: 1.14em;
     margin-top: 20px;
     margin-bottom: 20px;
+    @media screen and (min-width: 769px) {
+        margin-top: 36px;
+        margin-bottom: 13px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-top: 40px;
+        margin-bottom: 16px;
+    }
 }
 // Текст
 .advantages-list__text {
@@ -33,18 +50,21 @@ max-width: 220px;
     font-size: 12px;
     line-height: 1.7em;
     font-weight: 700;
-
+    margin-bottom: 30px;
+    @media screen and(min-width:769px) {
+        margin-bottom: 0;
+    }
+}
+.last-text {
+    margin-bottom: 0;
 }
 // Додавання зображення
 .first-icon::before {
-    
     background-image: url(/src/images/advantages/milk.sm.png);
 }
 .second-icon::before {
-    margin-top: 30px;
     background-image: url(/src/images/advantages/apple.sm.png);
 }
 .third-icon::before {
-    margin-top: 30px;
     background-image: url(/src/images/advantages/heart.sm.png);
 }

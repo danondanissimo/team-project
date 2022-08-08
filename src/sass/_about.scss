@@ -7,7 +7,7 @@
             background-repeat: no-repeat;
             background-size: 280px;
             background-position-x: 20;
-            background-position-y: 71%;
+            background-position-y: 72%;
         @media 
         (min-device-pixel-ratio:2),
         (min-resolution: 192dpi),
@@ -15,18 +15,19 @@
             background-image: url(/src/images/about/sectionbg_sm@2x.png);
             }
         }
-        // @media screen and (min-width: 1200px) {
-        //     background-repeat: no-repeat;
-        //     background-position-x: 20;
-        //     background-position-y: 71%;
-        //     background-image: url(/src/images/about/sectionbg_lg.png);
-        //     @media 
-        //     (min-device-pixel-ratio:2),
-        //     (min-resolution: 192dpi),
-        //     (min-resolution: 2dppx) {
-        //         background-image: url(/src/images/about/sectionbg_lg@2x.png);
-        //     }
-        // }
+        @media screen and (min-width: 1200px) {
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position-x: center;
+            background-position-y: 100%;
+            background-image: url(/src/images/about/sectionbg_lg.png);
+            @media 
+            (min-device-pixel-ratio:2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(/src/images/about/sectionbg_lg@2x.png);
+            }
+        }
 }
 
 // оформлення tradition and love
@@ -52,15 +53,34 @@
     text-align: center;
 }
 
-// Тумба на картинку (корова)
-.info__thumb-img {
-    margin-bottom: 40px;
+.info {
+    @media screen and (min-width: 769px) {
+            display: flex;
+        }
+    @media screen and (min-width: 1200px) {
+        align-items: center;
+    }
 }
+
 // контейнер з текстом
 .info-text {
     max-width: 217px;
+    @media screen and (min-width: 769px) {
+        max-width: 320px;
+        padding-left: 32px;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 453px;
+        padding-left: 100px;
+    }
 }
-
+// Тумба на картинку (корова)
+.info__thumb-img {
+    margin-bottom: 40px;
+    @media screen and (min-width: 769px) {
+        margin-bottom: 0;
+    }
+}
 // Перший текст (чорний)
 .info-text__first-text {
     color: $text-color-primary;
@@ -79,6 +99,9 @@
     line-height: 1.62em;
     margin-bottom: 16px;
     padding-right: 10px;
+    @media screen and (min-width:769px) {
+        padding-right: 25px;
+    }
 }
 // Речення
 .info-text__third-text {
@@ -96,6 +119,7 @@
     background-color: $background-color-secondary;
     width: 176px;
     height: 44px;
+    padding: 0;
 }
 // Текст кнопки
 .info-text__btn-text {
