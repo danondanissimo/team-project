@@ -33,7 +33,8 @@ $font-main: DM Sans, sans-serif;
 $font-secondary: Titan One, cursive;
 
 
-
+$indent: 36px;
+$item: 3;
 
 
 h1,
@@ -52,17 +53,13 @@ section {
 }
 
 
-
-// .card-set {
-//     @include list;
-//     display: flex;
-//     flex-wrap: wrap;
-//     gap: var(--indent);
-// }
-
-
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $indent;
+}
 .card-set__item {
-    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+    flex-basis: calc((100% - $indent) * ($item - 1) / $item);
 }
     
 .container {
