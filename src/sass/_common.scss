@@ -35,6 +35,12 @@ $items: 3;
 $indent: 32px;
 
 
+
+$indent: 36px;
+$item: 3;
+
+
+
 img {
     display: block;
     max-width: 100%;
@@ -45,6 +51,7 @@ ul {
     list-style: none;
     padding: 0;
 }
+
 
 a {
     text-decoration: none;
@@ -70,6 +77,15 @@ section {
 
 
 
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $indent;
+}
+.card-set__item {
+    flex-basis: calc((100% - $indent) * ($item - 1) / $item);
+}
+    
 
 .container {
     margin-left: auto;
