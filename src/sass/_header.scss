@@ -1,40 +1,70 @@
 .header {
+    position: relative;
+    padding-top: 8px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 32px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 40px;
+    }
+
     background-color: $background-color-primary;
 }
 
 .header__nav--mobile {
-    position: relative;
     display: flex;
+    justify-content: space-between;
+    justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 .logo {
     display: inline-block;
+    margin-right: auto;
 
-    padding-top: 8px;
+    @media screen and (min-width: 1200px) {
+        margin-right: 0;
+    }
 }
 
 .mobile-menu__btn {
     z-index: 10;
-
-    position: absolute;
-    left: 100%;
-
     display: flex;
-    align-items: center;
     justify-content: center;
     width: 20px;
     height: 20px;
-    margin-top: 23px;
+    margin-top: 15px;
+    margin-left: auto;
     padding: 0;
 
     background-color: transparent;
     border: none;
-    transform: translate(-100%, 0%);
     cursor: pointer;
 
-    // @media screen and (min-width: 1200px) {
-    //     display: none;
-    // }
+    @media screen and (min-width: 768px) {
+        margin-right: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.mobile-menu__btn.is-open {
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        top: 20px;
+        right: 32px;
+
+        margin-top: 0;
+        margin-right: 0;
+    }
 }
 
 .mobile-menu__burger {
@@ -76,17 +106,20 @@
 
     &.is-open {
         transform: translateX(0);
+        filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 30%;
     }
 }
 
 .header__btn {
     display: flex;
-    width: 209px;
+    width: 160px;
     height: 44px;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
     padding: 0;
 
     font-family: 'DM Sans';
@@ -97,6 +130,18 @@
     color: #D41443;
     border-radius: 22px;
     border: none;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.header__btn--mobile{
+    display: flex;
+    width: 209px;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .greater-sign__icon {
@@ -130,9 +175,26 @@
 
 
 .nav {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         display: none;
     }
+}
+
+.nav__list {
+    display: flex;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    
+    color: #FFFFFF;
+}
+
+.nav__item:not(:last-child) {
+    
+    margin-right: 35px;
 }
 
 .header__button {
