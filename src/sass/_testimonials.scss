@@ -2,29 +2,37 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 60px;
 }
-
+.slider__item {
+  position: relative;
+  // ПРИБРАТИ МАРДЖИН!
+  margin-bottom: 20px;
+}
 .slider-text--container {
-  margin-bottom: 16px;
   background: #fafafa;
 
   @media screen and (min-width: 1200px) {
     margin-left: 116px;
     margin-right: 116px;
+    margin-bottom: 16px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 620px;
     height: 164px;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-bottom: 16px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 .slider--text-box {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  background-color: transparent;
-  // width: 968px;
-  // height: 138px;
+
   @media screen and (min-width: 1200px) {
     padding: 47px 109px 39px 109px;
   }
@@ -37,65 +45,94 @@
   }
   @media screen and (min-width: 320px) and (max-width: 767px) {
     padding-top: 43px;
-    padding-left: 50px;
+    // padding-left: 50px;
+    // padding-right: 50px;
     padding-bottom: 17px;
-    padding-right: 50px;
   }
 }
-
-.slider__icon {
-  fill: #d31342;
+.slider-point::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #c7133e;
+  box-shadow: -10px 0 0 #c7133e, 10px 0 0 #c7133e;
 }
 
-.slider__icon-home {
-  margin-right: 18px;
+.slider-point-home::before {
+  content: '';
+  left: 49.7%;
+  margin-bottom: 32px;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #d9d9d9;
+  box-shadow: -18px 0 0 #d9d9d9, 18px 0 0 #d9d9d9;
 }
 
 .slider--text {
-  position: relative;
-  z-index: 1;
-  text-decoration-style: solid;
-  text-decoration-color: #e1e1e1;
   text-align: center;
   letter-spacing: 0.04em;
-  // background: linear-gradient(180deg, #e1e1e1, #e1e1e1 1px, #fafafa 0, #fafafa);
-
-  // background: repeating-linear-gradient(
-  //   #fafafa,
-  //   #fafafa 1px,
-  //   #e1e1e1 31px,
-  //   #fafafa 31px,
-  //   #e1e1e1 23px,
-  //   #fafafa 1px
-  // );
+  background: repeating-linear-gradient(
+    #fafafa 0px,
+    #fafafa 30px,
+    #e1e1e1 30px,
+    #e1e1e1 31px
+  );
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 1.88;
+    z-index: 2;
+    // background: repeating-linear-gradient(
+    //   #fafafa 0 34px,
+    //   #e1e1e1 30px,
+    //   #fafafa 35px,
+    //   #e1e1e1 31px
+    // );
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 14px;
     line-height: 2.14;
+    z-index: 2;
   }
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
     font-size: 12px;
     line-height: 2.58;
+    z-index: 2;
+    // padding-left: 58px;
+    padding-right: 15px;
+
     // padding-top: 43px;
     // padding-left: 65px;
     // padding-right: 50px;
     // padding-bottom: 17px;
   }
 }
-//   background: repeating-linear-gradient(rgba(225, 225, 225, 1));
-.slider__stripes {
+
+.slider--text::before {
+  content: '';
   position: absolute;
-  top: 28.5px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(180deg, #e1e1e1, #e1e1e1 1px, #fafafa 0, #fafafa);
-  background-size: 100% 30px;
+  margin-left: -4%;
+  z-index: -1;
+  top: 40%;
+  width: 54px;
+  height: 40px;
+  background-image: url(../images/reviews/quotes/quotes-lg.png);
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-left: -18%;
+    top: 28%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: -8%;
+    top: 43%;
+  }
 }
+
 .slider-image {
   display: block;
   margin-left: auto;
@@ -103,22 +140,38 @@
   width: 85px;
   height: 85px;
   border-radius: 44px;
-  margin-bottom: 16px;
-}
-.slider--client--text {
-  text-align: center;
-  margin-bottom: 32px;
   @media screen and (min-width: 1200px) {
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 32px;
+  }
+}
+
+.slider--client--text {
+  position: relative;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 36px;
+    margin-bottom: 32px;
     font-size: 20px;
     line-height: 1.85;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 24px;
+    margin-bottom: 32px;
     font-size: 16px;
     line-height: 1.88%;
   }
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-top: 36px;
+    margin-bottom: 16px;
     font-size: 14px;
     line-height: 1.86;
   }
