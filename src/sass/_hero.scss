@@ -8,11 +8,13 @@
     overflow: hidden;
 
     @media screen and (min-width: 768px) {
+        overflow: visible;
         padding-top: 16px;
         padding-bottom: 0;
     }
 
     @media screen and (min-width: 1200px) {
+        overflow: visible;
         padding-top: 60px;
         padding-bottom: 0;
     }
@@ -107,7 +109,7 @@
 
 .shop__description {
     position: relative;
-    z-index: 10;
+    z-index: 5;
 }
 
 .shop__item--red{
@@ -225,7 +227,7 @@
         align-items: center;
         }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
         padding-bottom: 60px;
         }
 }
@@ -330,7 +332,7 @@
     position: absolute;
     bottom: 75px;
     left: 36px;
-
+    
     width: 346px;
     height: 344px;
 
