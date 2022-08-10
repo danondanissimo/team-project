@@ -147,20 +147,10 @@
   color: $text-color-tertiary;
   margin-top: 56px;
   text-align: center;
-  width: 148npmpx;
+  width: 148px;
   margin-left: auto;
   margin-right: auto;
 
-  &::before {
-    content: '';
-    width: 100%;
-    left: 0;
-    height: 98px;
-    position: absolute;
-    bottom: 0;
-    transform: translateY(-2px);
-    border-top: 1px solid $background-color-senary;
-  }
   @media screen and (min-width: 768px) {
     font-family: DM Sans;
     font-style: normal;
@@ -170,5 +160,15 @@
     letter-spacing: 0.02em;
     width: 280px;
     margin-top: 48px;
+  }
+  &::before {
+    content: '';
+    width: 100%;
+    left: 0;
+    height: 98px;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-2px);
+    border-top: 1px solid $background-color-senary;
   }
 }
