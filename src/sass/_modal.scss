@@ -1,5 +1,5 @@
 .backdrop {
-  z-index: 100;
+  z-index: 1000;
   position: fixed;
   left: 0;
   top: 0;
@@ -27,6 +27,7 @@
   border-radius: 24px;
   overflow-y: scroll;
   transition: ease-in;
+  z-index: 1010;
 
   @media screen and (min-width: $breakpoint-tablet) {
     width: 450px;
@@ -56,11 +57,17 @@
   align-content: center;
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 15px;
   text-transform: uppercase;
 
   @media screen and (min-width: $breakpoint-tablet) {
     font-size: 21px;
+  }
+  @media screen and (min-width: 350px) {
+    font-size: 17px;
+  }
+  @media screen and (min-width: 380px) {
+    font-size: 19px;
   }
 }
 
@@ -97,6 +104,7 @@
 }
 
 .flavors {
+  font-family: $font-main;
   position: relative;
   font: $font-secondary;
   flex-direction: column;
@@ -145,7 +153,7 @@
 }
 
 .modal__form-flavors-quantity {
-  visibility: hidden;
+  display: none;
   position: absolute;
   margin-left: 20px;
   width: 30px;
@@ -153,10 +161,12 @@
   border-radius: 4px;
   border: 2px solid $color-senary;
   font-family: $font-main;
+  margin-left: 130px;
+  transform: translateY(-95%);
 }
 
 .modal__form-flavor-input:checked ~ .modal__form-flavors-quantity {
-  visibility: visible;
+  display: flex;
 }
 
 .modal__form-flavor-box {
@@ -167,6 +177,42 @@
   position: absolute;
   border-radius: 50%;
 }
+
+// .modal__form-phone-label {
+//   position: relative;
+//   width: 90%;
+//   height: 100px;
+
+//   border: 1px solid rgba(33, 33, 33, 0.2);
+//   border-radius: 4px;
+//   letter-spacing: 0.01em;
+//   color: #757575;
+//   transition: fill var(--cubic-animation), border-color var(--cubic-animation);
+
+//   &:focus-within {
+//     fill: var(--link-color);
+//     border-color: var(--link-color);
+//   }
+// }
+
+// .modal__form-phone-input {
+//   justify-content: center;
+//   position: relative;
+//   padding: 12px 12px 12px 42px;
+//   width: 90%;
+//   height: 40px;
+//   background-color: transparent;
+//   border: none;
+//   outline: transparent;
+// }
+
+// .modal__form-phone-icon {
+//   justify-content: center;
+//   position: absolute;
+//   margin: 11px 12px;
+//   top: 0%;
+//   left: 0%;
+// }
 
 .modal__button-next {
   display: flex;
@@ -202,4 +248,16 @@
 
   align-items: center;
   justify-content: center;
+}
+
+.modal__close-svg {
+  margin-left: auto;
+}
+
+.modal__button-close {
+  padding: 5px 5px 0 0;
+  display: flex;
+  margin-left: auto;
+
+  background-color: transparent;
 }
