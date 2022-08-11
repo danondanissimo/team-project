@@ -1,30 +1,14 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-$background-color-primary: #ffb8ca;
-$background-color-secondary: #ffffff;
-$background-color-tertiary: #fff5f6;
-$background-color-quaternary: #f0d1a5;
-$background-color-quinary: #c2e297;
-$background-color-senary: #e1e1e1;
-$background-gradient-primary: linear-gradient(
-  to bottom,
-  #fff5f6 0%,
-  #fff5f6 24%,
-  #ffffff 24%,
-  #ffffff 100%
-);
-$background-gradient-secondary: linear-gradient(
-  to bottom,
-  #ffffff 0%,
-  #ffffff 27%,
-  #fff5f6 27%,
-  #fff5f6 100%
-);
-$background-gradient-tertiary: repeating-linear-gradient(
-  rgba(0, 0, 0, 0) 0,
-  rgba(0, 0, 0, 0) 29px,
-  #e1e1e1 29px,
-  rgba(0, 0, 0, 0) 30px
-);
+
+$background-color-primary: #FFB8CA;
+$background-color-secondary: #FFFFFF;
+$background-color-tertiary: #FFF5F6;
+$background-color-quaternary: #F0D1A5;
+$background-color-quinary: #C2E297;
+$background-color-senary: #E1E1E1;
+$background-gradient-primary: linear-gradient(to bottom, #FFF5F6 0%, #FFF5F6 24%, #FFFFFF 24%, #FFFFFF 100%);
+$background-gradient-secondary: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 27%, #fff5f6 27%, #fff5f6 100%);
+$background-gradient-tertiary: repeating-linear-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 29px, #E1E1E1 29px, rgba(0, 0, 0, 0) 30px);
 $text-color-primary: #000000;
 $text-color-secondary: #ffa5ba;
 $text-color-tertiary: #907e82;
@@ -84,8 +68,12 @@ p {
 }
 
 section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    // @media screen and (min-width: 768px) {
+    //     padding-top: 30px;
+    //     padding-bottom: 30px;
+    // }
 }
 
 .card-set {

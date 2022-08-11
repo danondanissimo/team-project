@@ -1,8 +1,17 @@
+.section__testimonials {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+}
 .slider {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 80px;
 }
 .slider__item {
   position: relative;

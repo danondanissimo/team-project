@@ -18,7 +18,7 @@
         padding-right: 16px;
     }
 }
-.contacts_ice {
+.contacts {
     
     ul {
         list-style: none;  
@@ -31,19 +31,21 @@
     button {
         border: 0;
     }
-
-    // background: linear-gradient(to bottom, #ffffff 23.5%,#fff5f6 23.5%);
    
-   
-
-   
-   padding-bottom: 40px;
+   @media screen and (min-width: 320px) and (max-width: 767px) {
+    padding-top: 30px;
+    padding-bottom: 40px;
+   }
 
    @media screen and (min-width: 768px) {
-    padding-bottom: 120px;
     background: linear-gradient(to bottom, #ffffff 44%,#fff5f6 44%);
+    padding-top: 40px;
+    padding-bottom: 40px;
     }
+
     @media screen and (min-width: 1200px) {
+    padding-bottom: 120px;
+    padding-top: 60px;
     background: linear-gradient(to bottom, #ffffff 21%,#fff5f6 21%);
     }
 }
@@ -98,6 +100,7 @@ margin-bottom: 32px;
 
     @media screen and (min-width: 768px) {
         font-size: 14px;
+        margin-bottom: 32px;
     }
     @media screen and (min-width: 1200px) {
         font-size: 16px;
@@ -124,16 +127,18 @@ margin-bottom: 32px;
 
     @media screen and (min-width: 768px) {
         font-size: 14px;
+        margin-bottom: 12px;  
     }
     @media screen and (min-width: 1200px) {
         font-size: 16px;
-    }
+    }   margin-bottom: 8px;
 }
 
 .contacts__text {
 
     padding-bottom: 24px;
     margin-bottom: 24px;
+    
     font-family: $font-main;
     
     font-weight: 500;
@@ -144,14 +149,14 @@ margin-bottom: 32px;
 
     @media screen and (min-width: 768px) {
         font-size: 14px;
+        padding-bottom: 32px;
+        margin-bottom: 32px;
     }
     @media screen and (min-width: 1200px) {
         font-size: 16px;
     }
 }
-.contacts__works {
-    margin-bottom: 24px;
-}
+
 .contacts__day {
 font-family: $font-main;
 font-weight: 500;
@@ -178,6 +183,7 @@ color: $text-color-secondary;
 
 @media screen and (min-width: 768px) {
     font-size: 14px;
+    margin-bottom: 12px;  
 }
 @media screen and (min-width: 1200px) {
     font-size: 16px;
@@ -187,6 +193,7 @@ color: $text-color-secondary;
 .contacts__time-weekend {
       
     padding-bottom: 24px;
+    
     font-family: $font-main;
        
     font-weight: 500;
@@ -198,6 +205,7 @@ color: $text-color-secondary;
 
     @media screen and (min-width: 768px) {
         font-size: 14px;
+        padding-bottom: 32px;
     }
     @media screen and (min-width: 1200px) {
         font-size: 16px;
@@ -205,7 +213,7 @@ color: $text-color-secondary;
 }
 
 .contacts__link {
-
+text-decoration: none;
 font-family: $font-main;
 
 font-weight: 500;
@@ -224,8 +232,15 @@ transition: color 250ms, $cubic-bezier;
     }
     @media screen and (min-width: 1200px) {
         font-size: 16px;
-    }  
+    }   
 }
+.contacts__link:not(:last-child) {
+    padding-top: 24px;  
+    @media screen and (min-width: 768px) {
+       padding-top: 32px;
+    }
+}
+
 .contacts__btn {
 
     text-align: center;
