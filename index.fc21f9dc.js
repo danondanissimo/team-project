@@ -1,0 +1,2 @@
+function myFunction(){var e=document.getElementById("myCheck"),n=document.getElementById("flavors");1==e.checked?n.style.display="flex":n.style.display="none"}function myFunctionc(){var e=document.getElementById("myCheckc"),n=document.getElementById("flavorsc");1==e.checked?n.style.display="flex":n.style.display="none"}function myFunctionm(){var e=document.getElementById("myCheckm"),n=document.getElementById("flavorsm");1==e.checked?n.style.display="flex":n.style.display="none"}
+//# sourceMappingURL=index.fc21f9dc.js.map
