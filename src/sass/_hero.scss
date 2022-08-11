@@ -22,6 +22,8 @@
 
 .hero__container {
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero__title {
@@ -200,11 +202,6 @@
 
         margin-right: 12px;
     }
-
-        &:hover, &:focus {
-        color: #D41443;
-        background-color: #ECEBEB;
-        }
 }
 
 .hero__button--white {
@@ -281,6 +278,7 @@
 
     background-color: #ffffff;
     border-radius: 50%;
+    cursor: pointer;
 
     @media screen and (min-width: 1200px) {
         width: 26px;

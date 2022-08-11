@@ -221,5 +221,9 @@
 }
 
 .nav__link {
-    color: currentColor;
+    color: #ffffff;
+
+    &:hover, &:focus {
+        color: #D41443;
+    }
 }
