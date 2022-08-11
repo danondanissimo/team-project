@@ -17,6 +17,9 @@
             background-image: url(/src/images/about/sectionbg_sm@2x.png);
             }
         }
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+            padding-bottom: 60px;
+        }
         @media screen and (min-width: 1200px) {
             background-repeat: no-repeat;
             background-size: contain;
