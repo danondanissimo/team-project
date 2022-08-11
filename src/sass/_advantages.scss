@@ -2,6 +2,9 @@
 .advantages {
     padding-top: 0;
     background-color: $background-color-tertiary;
+    @media screen and (max-width: 767px) {
+            display: flex;
+    }
 }
 // Список продукту
 .advantages-list {
@@ -71,20 +74,24 @@ max-width: 220px;
 .first-icon::before {
     background-image: url(/src/images/advantages/milk.sm.png);
 }
-.second-icon{
-    &::before {
+.second-icon::before {
             background-image: url(/src/images/advantages/apple.sm.png);
-    }
+
+}
+.second-icon {
     @media screen and (min-width:1200px) {
             position: absolute;
             left: 35%;
-        }
+    }
 }
 
 .third-icon::before {
     background-image: url(/src/images/advantages/heart.sm.png);
+
+}
+.third-icon {
     @media screen and (min-width:1200px) {
-            position: absolute;
-            left: 70%;
-    }
+             position: absolute;
+             left: 70%;
+     }
 }

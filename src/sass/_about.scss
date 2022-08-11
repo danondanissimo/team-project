@@ -3,11 +3,13 @@
     padding-bottom: 40px;
     background-color: #FFF5F6;
         @media screen and (max-width: 767px) {
+            display: flex;
             background-image: url(/src/images/about/sectionbg_sm.png);
             background-repeat: no-repeat;
-            background-size: 280px;
-            background-position-x: 20;
+            background-size: contain;
+            background-position-x: center;
             background-position-y: 72%;
+
         @media 
         (min-device-pixel-ratio:2),
         (min-resolution: 192dpi),
