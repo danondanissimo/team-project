@@ -1,3 +1,9 @@
+body::-webkit-scrollbar {
+  /* chrome based */
+  width: 0px; /* ширина scrollbar'a */
+  background: transparent; /* опционально */
+}
+
 .backdrop {
   z-index: 1000;
   position: fixed;
@@ -153,10 +159,11 @@
 }
 
 .modal__form-flavors-quantity {
+  font-size: 15px;
   display: none;
   position: absolute;
   margin-left: 20px;
-  width: 30px;
+  width: 35px;
   height: 20px;
   border-radius: 4px;
   border: 2px solid $color-senary;
