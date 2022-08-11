@@ -243,8 +243,7 @@ transition: color 250ms, $cubic-bezier;
 
 .contacts__btn {
 
-    text-align: center;
-    
+    text-align: center;    
 
     @media screen and (min-width: 768px) {
         display: flex;
@@ -253,7 +252,9 @@ transition: color 250ms, $cubic-bezier;
         justify-content: center
     }
 }
-
+.btn__list {
+    margin-bottom: 30px;
+}
 .btn {
 
 justify-content: center;
@@ -285,16 +286,16 @@ transition: background-color 250ms linear;
     color: $color-secondary;
 
     stroke: $color-secondary;
-    
+   
     width: 161px;
-    padding-left: 17px;
-    padding-right: 17px;
+    padding: 10px 17px;
 
     .btn__icon {
         margin-left: 8px;
     }
 
     @media screen and (max-width: 767px) {
+       
         margin-bottom: 10px;    
     }   
     @media screen and (min-width: 768px) {
@@ -311,8 +312,9 @@ transition: background-color 250ms linear;
     color: $color-quaternary;
     background-color: $background-color-secondary;
     width: 161px;
-    padding-left: 30px;
-    padding-right: 30px;
+
+
+    padding: 10px 20px;
 
     stroke: $color-quaternary;
 
