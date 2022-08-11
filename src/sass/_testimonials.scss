@@ -2,15 +2,23 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 .slider__item {
   position: relative;
-  // ПРИБРАТИ МАРДЖИН!
-  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
+    
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-bottom: 16px;
+  }
 }
 .slider-text--container {
-  background: #fafafa;
+  background: $color-secondary;
 
   @media screen and (min-width: 1200px) {
     margin-left: 116px;
@@ -20,12 +28,16 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 620px;
     height: 164px;
+    margin-bottom: 16px;
+    margin-left: 63px;
   }
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
     margin-bottom: 16px;
     padding-left: 50px;
     padding-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 .slider--text-box {
@@ -47,7 +59,7 @@
     padding-top: 43px;
     // padding-left: 50px;
     // padding-right: 50px;
-    padding-bottom: 17px;
+    // padding-bottom: 17px;
   }
 }
 .slider-point::before {
@@ -57,21 +69,21 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c7133e;
-  box-shadow: -10px 0 0 #c7133e, 10px 0 0 #c7133e;
+  background: $color-quinary;
+  box-shadow: -10px 0 0 $color-quinary, 10px 0 0 $color-quinary;
 }
 
-.slider-point-home::before {
-  content: '';
-  left: 49.7%;
-  margin-bottom: 32px;
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #d9d9d9;
-  box-shadow: -18px 0 0 #d9d9d9, 18px 0 0 #d9d9d9;
-}
+// .slider-point-home::before {
+//   content: '';
+//   left: 49.7%;
+//   margin-bottom: 32px;
+//   position: absolute;
+//   width: 12px;
+//   height: 12px;
+//   border-radius: 50%;
+//   background: $color-septenary;
+//   box-shadow: -18px 0 0 $color-septenary, 18px 0 0 $color-septenary;
+// }
 
 .slider--text {
   text-align: center;
@@ -104,7 +116,6 @@
     line-height: 2.58;
     z-index: 2;
     // padding-left: 58px;
-    padding-right: 15px;
 
     // padding-top: 43px;
     // padding-left: 65px;
@@ -116,20 +127,21 @@
 .slider--text::before {
   content: '';
   position: absolute;
-  margin-left: -4%;
   z-index: -1;
   top: 40%;
   width: 54px;
   height: 40px;
   background-image: url(../images/reviews/quotes/quotes-lg.png);
-
+  @media screen and (min-width: 1200px) {
+    margin-left: -4%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: -5%;
+    top: 35%;
+  }
   @media screen and (min-width: 320px) and (max-width: 767px) {
     margin-left: -18%;
     top: 28%;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-left: -8%;
-    top: 43%;
   }
 }
 
@@ -163,7 +175,7 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-top: 24px;
+    margin-top: 60px;
     margin-bottom: 32px;
     font-size: 16px;
     line-height: 1.88%;
@@ -175,4 +187,28 @@
     font-size: 14px;
     line-height: 1.86;
   }
+}
+// Стили для слайдера
+.swiper {
+  @media screen and (min-width: 1200px) {
+    height: auto;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: auto;
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    height: auto;
+  }
+}
+.swiper-pagination-bullet-active {
+  width: 12px;
+  height: 12px;
+  background-image: url(../images/reviews/home/Vector.png);
+  background-color: transparent;
+  border-radius: 0%;
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
 }

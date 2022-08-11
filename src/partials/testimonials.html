@@ -1,6 +1,17 @@
-<ul class="slider container">
+<ul class="slider container swiper">
+   <div class="swiper-wrapper">
   <!-- <h1 class="visually-hidden">slider</h1> -->
-  <li class="slider__item">
+  <li class="slider__item swiper-slide">
+    <picture>       
+      <source
+        media="(min-width: 320px)"
+        srcset="
+          ./images/reviews/avatar-1.jpg 1x,
+          ./images/reviews/avatar-1@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+      </picture>
     <img
       class="slider-image"
       src="./images/reviews/avatar-1.jpg"
@@ -20,10 +31,20 @@
     </div>
     <div class="slider-point"></div>
     <p class="slider--client--text">Emily, Los Angeles</p>
-    <div class="slider-point-home"></div>
+    <!-- <div class="slider-point-home"></div> -->
   </li>
 
-  <li class="slider__item">
+  <li class="slider__item swiper-slide">
+    <picture>
+      <source
+        media="(min-width: 320px)"
+        srcset="
+          ./images/reviews/avatar-2.jpg    1x,
+          ./images/reviews/avatar-2@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+      </picture>
     <img
       class="slider-image"
       src="./images/reviews/avatar-2.jpg"
@@ -41,10 +62,20 @@
     </div>
     <div class="slider-point"></div>
     <p class="slider--client--text">Jenifer, New York</p>
-    <div class="slider-point-home"></div>
+    <!-- <div class="slider-point-home"></div> -->
   </li>
 
-  <li class="slider__item">
+  <li class="slider__item swiper-slide">            
+ <picture>
+  <source
+    media="(max-width: 320px)"
+    srcset="
+      ./images/reviews/avatar-3.jpg    1x,
+      ./images/reviews/avatar-3@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+</picture>
     <img
       class="slider-image"
       src="./images/reviews/avatar-3.jpg"
@@ -63,6 +94,13 @@
     </div>
     <div class="slider-point"></div>
     <p class="slider--client--text">Lola, Chicago</p>
-    <div class="slider-point-home"></div>
+    <!-- <div class="slider-point-home"></div> -->
   </li>
+  </div>
+
+<div class="swiper-pagination"></div>
+</div>
 </ul>
+
+
+
