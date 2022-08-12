@@ -35,6 +35,7 @@
    @media screen and (min-width: 320px) and (max-width: 767px) {
     padding-top: 30px;
     padding-bottom: 40px;
+    background: linear-gradient(to bottom, #ffffff 22%,#fff5f6 22%);
    }
 
    @media screen and (min-width: 768px) {
@@ -314,7 +315,7 @@ transition: background-color 250ms linear;
     width: 161px;
 
 
-    padding: 10px 20px;
+    padding: 10px 31px;
 
     stroke: $color-quaternary;
 
