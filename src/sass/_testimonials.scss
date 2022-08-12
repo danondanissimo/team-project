@@ -74,18 +74,21 @@
   box-shadow: -10px 0 0 $color-quinary, 10px 0 0 $color-quinary;
 }
 
-// .slider-point-home::before {
-//   content: '';
-//   left: 49.7%;
-//   margin-bottom: 32px;
-//   position: absolute;
-//   width: 12px;
-//   height: 12px;
-//   border-radius: 50%;
-//   background: $color-septenary;
-//   box-shadow: -18px 0 0 $color-septenary, 18px 0 0 $color-septenary;
-// }
-
+.slider-point-home::before {
+  content: '';
+  left: 49.7%;
+  margin-bottom: 32px;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: $color-septenary;
+  box-shadow: -18px 0 0 $color-septenary, 18px 0 0 $color-septenary;
+}
+.slider-home{
+  justify-content: center;
+  text-align: center;
+}
 .slider--text {
   text-align: center;
   letter-spacing: 0.04em;
