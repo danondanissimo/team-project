@@ -1,5 +1,5 @@
 (() => {
-	const menuClsRef = document.querySelector("[link-menu]");
+	const menuClsRef = document.getElementById("link-menu");
 	const mobileMenuRef = document.querySelector("[data-menu]");
 
     const menuBtnRef = document.querySelector("[data-menu-button]");
