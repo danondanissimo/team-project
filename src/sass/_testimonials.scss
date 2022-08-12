@@ -98,12 +98,10 @@
 .slider--text {
   text-align: center;
   letter-spacing: 0.04em;
-  background: repeating-linear-gradient(
-    #fafafa 0px,
-    #fafafa 30px,
-    #e1e1e1 30px,
-    #e1e1e1 31px
-  );
+  background: repeating-linear-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 29px, #E1E1E1 29px, rgba(0, 0, 0, 0) 30px);
+
+
+
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 1.88;
